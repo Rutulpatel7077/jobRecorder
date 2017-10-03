@@ -12,6 +12,7 @@ namespace JobRecorder.Controllers
 {
     public class employeesController : Controller
     {
+        // This is database connection
         private JobRecorderModel db = new JobRecorderModel();
 
         // GET: employees

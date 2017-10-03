@@ -12,6 +12,7 @@ namespace JobRecorder.Controllers
 {
     public class jobsController : Controller
     {
+        // Connection to the database
         private JobRecorderModel db = new JobRecorderModel();
 
         // GET: jobs
@@ -21,7 +22,7 @@ namespace JobRecorder.Controllers
             return View(jobs.ToList());
         }
 
-        // GET: jobs/Details/5
+        // GET: jobs/Details/
         public ActionResult Details(int? id)
         {
             if (id == null)
