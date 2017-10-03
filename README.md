@@ -2,6 +2,7 @@
 
 This is an employee management tool for HR management. Made in C# .net framework by Rutul Patel as part first assignment1 in Enterprise Computting course.
 
+
 ## Getting Started
 
 As Developer, You can download this project in zip file from this GitHub account. This will run on your local machine as well with help of visual studio code.
@@ -28,14 +29,13 @@ We already deploy this project with the help of azure portal  and here is the li
 
 * [.Net Frame Work](https://www.asp.net/mvc) - The web framework used
 
-
 ## Versioning
 
 We use [Github](https://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Rutulpatel7077/jobRecorder). 
 
 ## Authors
 
-* **Rutul Patel** - *Initial work* - [Rutul pate;'s GitHub](https://github.com/Rutulpatel7077)
+* **Rutul Patel** - *Initial work* - [Rutul patel;'s GitHub](https://github.com/Rutulpatel7077)
 
 See also the list of [contributors](https://github.com/ifotn?tab=repositories) who participated in this project.
 
