@@ -1,0 +1,15 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<JobRecorder.Models.job>
+
+<h2>Welcome to the Job Recorder</h2>
+
+<ul>
+    @foreach (var j in Model)
+    {
+        <li>@Html.ActionLink(j.job_position, "Browse", "Jobs", new { jobs = j.job_position }, null)</li>
+    }
+</ul>
