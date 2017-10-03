@@ -1,0 +1,52 @@
+﻿@model IEnumerable<JobRecorder.Models.job>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.employee.employee_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_position)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_salary)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee.employee_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.job_position)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.job_description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.job_salary)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.job_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.job_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.job_id })
+        </td>
+    </tr>
+}
+
+</table>
